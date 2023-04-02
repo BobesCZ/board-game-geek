@@ -13,6 +13,14 @@ const bggResponse = parseBggXmlApi2ThingResponse(data);
 const thing = bggResponse.item;
 ```
 
+### Thing with ranking and rating stats
+
+```typescript
+const { data } = await axios.get('https://api.geekdo.com/xmlapi2/thing?id=169786&versions=1&stats=1');
+const bggResponse = parseBggXmlApi2ThingResponse(data);
+const thing = bggResponse.item;
+```
+
 You can also get multiple things
 
 ```typescript
